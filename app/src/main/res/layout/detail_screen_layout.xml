@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ds_title_top_margin"
+        android:padding="@dimen/ds_title_padding"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/ds_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/ds_logo_width_height"
+        android:layout_height="@dimen/ds_logo_width_height"
+        android:layout_marginTop="@dimen/ds_logo_top_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ds_time_top_margin"
+        android:padding="@dimen/ds_time_padding"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/ds_time_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ds_desc_top_margin"
+        android:paddingStart="@dimen/ds_desc_start_end_padding"
+        android:paddingEnd="@dimen/ds_desc_start_end_padding"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/ds_desc_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time" />
+
+    <TextView
+        android:id="@+id/teacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ds_teacher_start_margin"
+        android:layout_marginTop="@dimen/ds_teacher_top_margin"
+        android:padding="@dimen/ds_teacher_padding"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/ds_teacher_text_Size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <TextView
+        android:id="@+id/subjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ds_subject_start_margin"
+        android:layout_marginTop="@dimen/ds_subject_top_margin"
+        android:padding="@dimen/ds_subject_padding"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/ds_subject_text_size"
+        app:layout_constraintStart_toEndOf="@id/teacherName"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <TextView
+        android:id="@+id/teacherContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ds_contact_start_margin"
+        android:layout_marginTop="@dimen/ds_contact_top_margin"
+        android:padding="@dimen/ds_contact_padding"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/ds_contact_text_size"
+        app:layout_constraintStart_toEndOf="@id/subjectName"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

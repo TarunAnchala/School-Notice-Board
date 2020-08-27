@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Independence Day Celebrations",
+    "description": "Tomorrow We are going to have Independence day Celebrations.So,All the students are expected to come in white uniform and we will be having celebrations and games till 5 pm",
+    "image": "india",
+    "subject": "Maths",
+    "time": "Sep 5, 9:00 AM",
+    "teacher": "Ramu",
+    "teacher_contact_number": "9999999999"
+  },
+  {
+    "id": 2,
+    "title": "Unit Test",
+    "description": "Dear Parent,Next Unit tests are going to start in 2 weeks.So,we will be having extra study hours from today.So, we will be having a subject on each day and a test after the study hour and marks of all the subjects will be share in the weekend ",
+    "image": "book2",
+    "subject": "Maths",
+    "time": "Sep 1, 9:00 AM",
+    "teacher": "Raju",
+    "teacher_contact_number": "9999999999"
+
+  },
+  {
+    "id": 3,
+    "title": "Results",
+    "description": "Dear Parent,Unit test-I results are announced.So,we request you to go through it and it would be good if you visit school once.Supplementary tests will be conducted next weekend.",
+    "image": "book2",
+    "subject": "Science",
+    "time": "Aug 30, 12:00 PM",
+    "teacher": "Sita",
+    "teacher_contact_number": "9999999999"
+
+  },
+  {
+    "id": 4,
+    "title": "Annual Day Celebrations",
+    "description": "Dear Parent,We are going to celebrate our school's 20th Anniversary Celebrataions in Hotel Den on 5th of this month.So,we are very happy to invite you and will be waiting for your presence and there will be games for parents",
+    "image": "party",
+    "subject": "Physics",
+    "time": "Aug 28, 7:00 PM",
+    "teacher": "Kishore",
+    "teacher_contact_number": "9999999999"
+
+  },
+  {
+    "id": 5,
+    "title": "Special Classes",
+    "description": "Dear Parent,As we are aware that exams are very short in time ,we are going to start special classes and we wantyou to make sure student will be attending classes and monitoring his results",
+    "image": "book2",
+    "subject": "Chemistry",
+    "time": "Daily at 6 PM",
+    "teacher": "Laxman",
+    "teacher_contact_number": "9999999999"
+
+  }
+]

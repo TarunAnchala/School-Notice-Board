@@ -23,8 +23,8 @@ public class DetailScreen extends Fragment {
     private TextView title;
     private ImageView logo;
     private TextView time;
-    private TextView decription;
-    private TextView teacherNamae;
+    private TextView description;
+    private TextView teacherNama;
     private TextView subject;
     private TextView teacherContact;
     private String packName;
@@ -51,8 +51,8 @@ public class DetailScreen extends Fragment {
         title = view.findViewById(R.id.title);
         logo = view.findViewById(R.id.logo);
         time = view.findViewById(R.id.time);
-        decription = view.findViewById(R.id.description);
-        teacherNamae = view.findViewById(R.id.teacherName);
+        description = view.findViewById(R.id.description);
+        teacherNama = view.findViewById(R.id.teacherName);
         subject = view.findViewById(R.id.subjectName);
         teacherContact = view.findViewById(R.id.teacherContact);
         packName = MyApplication.getPackName();
@@ -63,8 +63,8 @@ public class DetailScreen extends Fragment {
             setLogo(notice.getImage());
             title.setText(notice.getTitle());
             time.setText(notice.getTime());
-            decription.setText(notice.getDescription());
-            teacherNamae.setText(notice.getTeacher());
+            description.setText(notice.getDescription());
+            teacherNama.setText(notice.getTeacher());
             subject.setText(notice.getSubject());
             teacherContact.setText(notice.getTeacher_contact_number());
         }

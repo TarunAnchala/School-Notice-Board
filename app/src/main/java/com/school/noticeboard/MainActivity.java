@@ -2,6 +2,7 @@ package com.school.noticeboard;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -22,7 +23,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements InjectManager.InjectedEventNotifier {
     private static final String TAG = "MainActivity";
-    private RecyclerView recyclerView;
     private ArrayList<Notice> listOfNotices = new ArrayList<>();
     private ContentMgmtViewModel viewModel;
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements InjectManager.Inj
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.notificationsList);
+        RecyclerView recyclerView = findViewById(R.id.notificationsList);
         viewModel = ViewModelProviders.of(this).get(ContentMgmtViewModel.class);
         viewModel.getListOfNotification().observe(this, new Observer<ArrayList<Notice>>() {
             @Override
